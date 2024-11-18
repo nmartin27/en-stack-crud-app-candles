@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit <%= candle.name %></title>
+</head>
+<body>
+    <h1>Edit <%= candle.name %></h1>
+    <form action="/candles/<%=candle._id%>?_method=PUT" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="<%= candle.name %>">
+        <label for="hasPrize">Has Prize?</label>
+        <input type="checkbox" name="hasPrize" 
+        <% if (candle.hasPrize){ %>checked<%} %>>
+        <button type="submit">Update Candle</button>
+    </form>
+    <a href="/candles">Back to Candles</a>
+</body>
+</html>

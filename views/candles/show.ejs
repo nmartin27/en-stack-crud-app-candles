@@ -10,7 +10,7 @@
     <% if (candle.hasPrize) { %>
         <p>This candle has a prize!</p>
         <% } else { %>
-            <p>This candle does not have a prize </p>
+            <p>This candle does NOT have a prize </p>
         <% } %>
         <form action="/candles/<%= candle._id %>?_method=DELETE" method="POST">
             <button type="submit">Delete <%=candle.name %></button>
