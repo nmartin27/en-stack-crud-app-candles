@@ -72,6 +72,6 @@ app.put("/candles/:candleId", async (req, res) => {
   res.redirect(`/candles/${req.params.candleId}`);
 });
 
-app.listen(3000, () => {
-  console.log("Listening on 3000, Capn!");
+app.listen(3002, () => {
+  console.log("Listening on 3002, Capn!");
 });
