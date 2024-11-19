@@ -15,7 +15,8 @@
 
 p{
     color: white;
-    text-shadow: 3px 1px 2px black;}
+    text-shadow: 3px 1px 2px black;
+}
 
 button:hover{
     font-size: 25px;
@@ -25,6 +26,16 @@ button:hover{
 input{
     font-size: 25px;
 }
+
+input[type="checkbox"]{
+    font-size: 25px;
+    transform: scale(2);  /* asked chat */
+    margin: 20px;
+}
+
+label{
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;}
 
 a {
     margin:40px;
