@@ -15,6 +15,7 @@ const Candle = require("./models/candles.js");
 
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
+app.use(express.static('public'))
 
 app.get("/", async (req, res) => {
   res.render("home.ejs");
@@ -61,7 +62,6 @@ app.get("/candles/:candleId/edit", async (req, res) => {
 
 
 app.put("/candles/:candleId", async (req, res) => {
-    // console.log("Candle ID:", req.params.candleId);
     
   if (req.body.hasPrize === "on") {
     req.body.hasPrize = true;
